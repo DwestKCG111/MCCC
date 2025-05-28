@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Murphy Chambers Members Forum</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f9ff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #005bbb;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #ffd500;
+      padding: 10px;
+    }
+    nav a {
+      color: #005bbb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+    }
+    .tiers, .demographics, .members, .blog, .calendar, .contact, .registration {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    input, textarea, select {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+    h2 {
+      color: #005bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Murphy Chambers Members Forum</h1>
+  </header>
+
+  <nav>
+    <a href="#tiers">Membership Tiers</a>
+    <a href="#demographics">Customer Demographics</a>
+    <a href="#members">All Members</a>
+    <a href="#blog">Community Posts</a>
+    <a href="#calendar">Event Calendar</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#registration">Register</a>
+  </nav>
+
+  <section id="tiers" class="tiers">
+    <h2>Membership Tiers</h2>
+    <ul>
+      <li><strong>Bronze:</strong> Access to forum and blog</li>
+      <li><strong>Silver:</strong> Bronze benefits + access to member directory</li>
+      <li><strong>Gold:</strong> Silver benefits + create and manage events</li>
+    </ul>
+  </section>
+
+  <section id="demographics" class="demographics">
+    <h2>Customer Demographics</h2>
+    <form>
+      <input type="text" placeholder="Phone Number">
+      <input type="file" accept="image/*" placeholder="Upload Photo">
+      <input type="text" placeholder="Address Line">
+      <input type="url" placeholder="Facebook URL">
+      <input type="url" placeholder="Website">
+    </form>
+  </section>
+
+  <section id="members" class="members">
+    <h2>All Enrolled Members</h2>
+    <p>List of all enrolled members with name and tier status (to be dynamically populated).</p>
+  </section>
+
+  <section id="blog" class="blog">
+    <h2>Community Posts</h2>
+    <textarea placeholder="Write your post here..."></textarea>
+    <button type="button">Post</button>
+  </section>
+
+  <section id="calendar" class="calendar">
+    <h2>Event Calendar</h2>
+    <p>(Integrate with fullcalendar.io or similar plugin in production)</p>
+    <input type="date">
+    <textarea placeholder="Event details..."></textarea>
+    <button type="button">Add Event</button>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="registration" class="registration">
+    <h2>Registration Form</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <select required>
+        <option value="">Are you a large or small business?</option>
+        <option value="small">Small Business</option>
+        <option value="large">Large Business</option>
+      </select>
+      <input type="number" placeholder="How many employees?" required>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+</body>
+</html>
